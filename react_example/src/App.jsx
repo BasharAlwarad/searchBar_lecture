@@ -10,7 +10,7 @@ import ReactSelectSearchBar from './components/ReactSelectSearchBar';
 import StyledSearchBar from "./components/StyledSearchBar";
 import ARIASearchBar from './components/ARIASearchBar';
 import MemoSearchBar from './components/MemoSearchBar';
-
+import BackEndFilterdSearchBar from './components/BackEndFilterdSearchBar';
 
 
 function App() {
@@ -64,6 +64,11 @@ function App() {
         setSearchResults={setSearchResults}
         /> } />
 <Route path='/MemoSearchBar' element={<MemoSearchBar
+        searchTerm={searchTerm}
+        setSearchTerm={setSearchTerm}
+        setSearchResults={setSearchResults}
+        />} />
+<Route path='/BackEndFilterdSearchBar' element={<BackEndFilterdSearchBar
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
         setSearchResults={setSearchResults}
