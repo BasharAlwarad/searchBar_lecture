@@ -25,27 +25,28 @@
    - Explain the concepts of debouncing and throttling in the context of search bars.
      Debouncing:
 
-Debouncing is a technique where a function call is delayed until after a certain period of time has elapsed since the last invocation of that function. It's particularly useful when you want to ensure that a function is only called after the user has stopped performing a certain action, such as typing in a search bar.
+- Debouncing is a technique where a function call is delayed until after a certain period of time has elapsed since the last invocation of that function. It's particularly useful when you want to ensure that a function is only called after the user has stopped performing a certain action, such as typing in a search bar.
 
-Here's how debouncing typically works in the context of a search bar:
+- Here's how debouncing typically works in the context of a search bar:
 
-When a user starts typing in the search bar, a debounce function is invoked.
+- 1. When a user starts typing in the search bar, a debounce function is invoked.
 The debounce function starts a timer.
 If the user continues typing before the timer expires, the timer is reset.
 Once the user stops typing and the timer expires, the debounce function is finally invoked, executing the desired action (e.g., performing a search).
 
-In the context of a search bar, throttling ensures that the search function is not called more frequently than a certain interval, regardless of how rapidly the user types.
+- 2. In the context of a search bar, throttling ensures that the search function is not called more frequently than a certain interval, regardless of how rapidly the user types.
 
-Here's how throttling typically works:
+- Here's how throttling typically works:
 
-When a user starts typing in the search bar, a throttle function is invoked.
+- 1. When a user starts typing in the search bar, a throttle function is invoked.
 The throttle function records the timestamp of the last invocation.
 If the time elapsed since the last invocation is less than the specified interval, the function is not executed.
-Once the interval has elapsed since the last invocation, the function is executed, and the process repeats.
+
+- 2. Once the interval has elapsed since the last invocation, the function is executed, and the process repeats.
 
 - Discuss how debouncing and throttling can improve performance by reducing unnecessary
 
-function calls during user input.
+- function calls during user input.
 In summary, both debouncing and throttling are techniques used to optimize the performance of functions in response to repetitive events like user input in a search bar. Debouncing delays the execution of a function until after a certain period of inactivity, while throttling limits the rate of function execution to a specified interval. Each technique has its use cases and can be applied based on the specific requirements of your application.
 
 5. **Handling Asynchronous Searches:**
@@ -73,8 +74,3 @@ In summary, both debouncing and throttling are techniques used to optimize the p
 
    - Showcase real-world examples of search bars in popular websites or applications.
    - Discuss best practices for designing intuitive search experiences and optimizing search performance.
-
-10. **Q&A Session:**
-    - Encourage questions from the audience to clarify any concepts or address specific challenges they may be facing with implementing search bars in JavaScript and React.
-
-By covering these main highlights, you can provide a comprehensive overview of search bar implementation in JavaScript and React, catering to both beginners and those looking to deepen their understanding of the topic.
