@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
-function FuzzySearchBar({ setSearchResults }) {
-  const [searchTerm, setSearchTerm] = useState('');
+function FuzzySearchBar({ setSearchResults,searchTerm,setSearchTerm }) {
+  // const [searchTerm, setSearchTerm] = useState('');
   const [data, setData] = useState([]);
   const [filteredResults, setFilteredResults] = useState([]);
 
@@ -50,10 +50,11 @@ function FuzzySearchBar({ setSearchResults }) {
         : filterResults(searchTerm);
     setFilteredResults(results);
     setSearchResults(results);
-  }, [searchTerm, setSearchResults, filterResults]);
+  }, [searchTerm, filterResults]);
 
   return (
-    <div style={{ position: 'relative' }}>
+
+    <div  className='search-container' style={{ position: 'relative' }}>
       <input
         type='text'
         placeholder='Search...'

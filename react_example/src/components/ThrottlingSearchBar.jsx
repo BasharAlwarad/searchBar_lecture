@@ -57,7 +57,8 @@ function ThrottlingSearchBar({ searchTerm, setSearchTerm, setSearchResults }) {
   }, [searchTerm, setSearchResults]); // Update search results whenever searchTerm changes
 
   return (
-    <div>
+    <div  className='search-container' >
+
       <input
         type='text'
         placeholder='Search...'

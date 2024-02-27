@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const SearchList = ({ searchResults }) => {
   return (
-    <ul>
+    <ul className="search-list">
       {searchResults?.length === 0 ? (
         <li>No results found</li>
       ) : (
