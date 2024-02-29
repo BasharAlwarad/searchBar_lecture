@@ -10,7 +10,8 @@ const navlinkArr = [
   'ReactSelectSearchBar',
   'StyledSearchBar',
   'ARIASearchBar',
-  'MemoSearchBar'
+  'MemoSearchBar',
+  'BackEndFilterdSearchBar',
 ];
 
   return (
